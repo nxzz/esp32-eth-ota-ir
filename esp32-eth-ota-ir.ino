@@ -3,10 +3,18 @@
 */
 
 #include <ETH.h>
+#include <AsyncTCP.h>
+#include <ESPAsyncWebServer.h>
+#include <AsyncJson.h>
+#include <ArduinoJson.h>
+
 #include <ESPmDNS.h>
 #include <ArduinoOTA.h>
 
-#include <IRremote.h>
+#include <IRremoteESP8266.h>
+#include <IRsend.h>
+#include <IRrecv.h>
+#include <IRutils.h>
 
 #define ETH_CLK_MODE ETH_CLOCK_GPIO17_OUT
 #define ETH_POWER_PIN -1
